@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: ease 0.2s all;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    
+}
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.card-text h2 {
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+.detail-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detail-card h2 {
+    font-size: 28px;
+}
+
+.detail-card h3 {
+    color: royalblue;
+    margin: 10px 0;
+}
+
+.club {
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h4 {
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    padding-left: 20px;
+}
+
+.info-section li {
+    margin-bottom: 6px;
+}
+
+.info-section li p1 {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.info-section li p2 {
+    text-decoration: underline;
+}
