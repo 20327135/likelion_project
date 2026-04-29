@@ -165,32 +165,6 @@ Frontend / Backend / Design
 
 ---
 
-## 📸 실행 화면
-
-### 메인 대시보드
-
-![메인화면](./assets/main.png)
-
----
-
-### 아기 사자 추가 폼
-
-![추가폼](./assets/form.png)
-
----
-
-### 파트 필터 기능
-
-![필터기능](./assets/filter.png)
-
----
-
-### 빈 상태 UI
-
-![빈상태](./assets/empty.png)
-
----
-
 ## 💡 프로젝트를 통해 배운 점
 
 이번 프로젝트를 통해  
