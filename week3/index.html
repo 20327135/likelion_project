@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아기사자 명단 대시보드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="dashboard">
+      <div class="control-area">
+        <button id="toggleFormBtn" type="button">아기 사자 추가</button>
+        <button id="deleteLastBtn" type="button">마지막 아기 사자 삭제</button>
+
+        <p class="total-text">총 <span id="totalCount">0</span>명</p>
+
+        <select id="partFilter" aria-label="파트 필터">
+          <option value="all">전체</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Design">Design</option>
+        </select>
+      </div>
+
+      <form id="lionForm" class="form-area hidden" novalidate>
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input id="name" type="text" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="part">파트</label>
+          <select id="part">
+            <option value="">파트 선택</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Design">Design</option>
+          </select>
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group full">
+          <label for="skills">관심 기술</label>
+          <input id="skills" type="text" placeholder="예: HTML / CSS, JavaScript, React" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group full">
+          <label for="summary">한 줄 소개</label>
+          <input id="summary" type="text" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group full">
+          <label for="intro">자기소개</label>
+          <textarea id="intro" rows="4"></textarea>
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input id="email" type="email" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">전화번호</label>
+          <input id="phone" type="text" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group full">
+          <label for="website">웹사이트</label>
+          <input id="website" type="text" placeholder="예: https://example.com" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-group full">
+          <label for="comment">한 마디</label>
+          <input id="comment" type="text" />
+          <p class="error-message"></p>
+        </div>
+
+        <div class="form-buttons full">
+          <button type="submit">추가하기</button>
+          <button id="cancelBtn" type="button">취소</button>
+        </div>
+      </form>
+
+      <section id="summaryEmpty" class="empty-message hidden">
+        아직 등록된 아기사자가 없습니다.
+      </section>
+
+      <section id="summaryGrid" class="summary-grid"></section>
+
+      <section id="detailEmpty" class="empty-message hidden">
+        아직 등록된 아기사자가 없습니다.
+      </section>
+
+      <section id="detailList" class="detail-list"></section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
