@@ -1,5 +1,3 @@
-# likelion_project
-```md
 # 🦁 likelion_project
 
 멋쟁이사자처럼 프론트엔드 미션으로 진행한  
